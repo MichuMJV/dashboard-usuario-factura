@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturas📋</title>
+    <link rel="stylesheet" href="form.css">
+    <style>
+        body{background: radial-gradient(88.2% 138.02% at 50% 50%, #6B5796 0%, #191423 100%)}
+    </style>    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+    </style>
+</head>
+<body>
+    <div id="body">
+        <h1 id="titulo">API MONGO DB</h1>
+        <br>
+        <div class='horizontal'>
+            <input class="buscador" type="text" name="buscador" id="buscador" placeholder="🔎 Buscar por RUC de cliente">
+            <input class="buscador" type="text" name="buscador" id="buscador2" placeholder="🔎 Buscar por # de factura">
+        </div>
+        <ul id="Usuariosact">
+            <ul id="cellname">
+                <div style="width: 1.5vw;"></div>
+                <li class="titulos"># Factura</li>
+                <li class="titulos">RUC emisor</li>
+                <li class="titulos">RUC cliente</li>
+                <li class="titulos">Costo</li>
+                <li class="titulos">$ Neto</li>
+                <li class="titulos">Fecha</li>
+                <li class="titulos">Tipo</li>
+                <li class="titulos">ITBMSneto</li>
+                <div style="width: 1.5vw;"></div>
+            </ul> 
+        </ul>
+        <div id="actInv">
+            
+        </div>
+        <div id="newInv">
+            
+        </div>
+        <button class="botondefault2" id="añadirfactu">Añadir Factura</button>
+    </div>
+    <footer>
+        <button class="botondefault2" id="usuarios" >Usuarios</button>
+        <button class="botondefault2">Facturas</button>
+    </footer>
+    <script src="https://kit.fontawesome.com/13f271e754.js" crossorigin="anonymous"></script>
+    <script type="module" src="./facturas.js"></script>
+</body>
+</html>

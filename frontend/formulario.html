@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="form.css" />
+    <style>
+      body {
+        background: radial-gradient(
+          88.2% 138.02% at 50% 50%,
+          #6b5796 0%,
+          #191423 100%
+        );
+      }
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+    </style>
+  </head>
+<body>
+    <div id="body">
+      <h1 id="titulo">API MONGO DB</h1>
+      <br />
+      <div class="horizontal">
+        <input
+          class="buscador"
+          type="text"
+          name="buscador"
+          id="buscador"
+          placeholder="🔎 Buscar por nombre"
+        />
+        <input
+          class="buscador"
+          type="number"
+          name="buscador"
+          id="buscador2"
+          placeholder="🔎 Buscar por edad"
+        />
+        <input
+          class="buscador"
+          type="email"
+          name="buscador"
+          id="buscador3"
+          placeholder="🔎 Buscar por email"
+        />
+      </div>
+      <br />
+      <div class="horizontal" id="cellnameus">
+        <h1>Nombre</h1>
+        <h1>edad</h1>
+        <h1>contraseña</h1>
+        <h1>E-Mail</h1>
+      </div>
+      <ul id="Usuariosact"></ul>
+      <button
+        style="justify-self: left"
+        class="botondefault2"
+        id="nuevousuario"
+      >
+        nuevo usuario
+      </button>
+      <div id="nweuser"></div>
+    </div>
+    <footer>
+      <button class="botondefault2">Usuarios</button>
+      <button class="botondefault2" id="facturas">Facturas</button>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/13f271e754.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./form.js"></script>
+  </body>
+</html>
